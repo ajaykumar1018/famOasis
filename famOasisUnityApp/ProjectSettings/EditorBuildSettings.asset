@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/mainScene.unity
+    guid: 8ca3161fbf2629c439f2569dbb00f167
+  - enabled: 1
+    path: Assets/Scenes/homeScene.unity
+    guid: fb4b6a3d572934743a600fd75094f8bd
+  - enabled: 0
+    path: 
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/anywheredoor.unity
+    guid: ebe650c241a93cc48a4d6558f451ffdb
+  - enabled: 1
+    path: Assets/Scenes/parisScene.unity
+    guid: 02ff77a3a1c70d347881865c6c5b7eef
   m_configObjects: {}
