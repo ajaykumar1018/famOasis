@@ -1,0 +1,365 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>famOasis </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='img/favicon.ico')}}">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/slicknav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/fontawesome-all.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/slick.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <!-- <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{{url_for('static',filename='img/logo/logoiconcrop.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Preloader Start -->
+
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparrent ">
+            <div class="main-header header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-2">
+                            <a href="{{url_for('index')}}">
+                                <h4>famOasis</h4>
+                            </a>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li class=""><a href="{{url_for('index')}}"> Home</a></li>
+
+                                        <li><a href="#contact">Contact</a></li>
+                                        <li><a href="{{url_for('logout')}}">Logout</a></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+
+
+    <div class="slider-area ">
+        <div class="slider-active">
+            <div class="single-slider slider-height slider-padding d-flex align-items-center">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="hero__caption">
+                                <span data-animation="fadeInUp" data-delay=".4s"></span>
+                                <h1 data-animation="fadeInUp" data-delay=".6s">Hello <br> {{user.name}}</h1>
+                                <p data-animation="fadeInUp" data-delay=".8s">Optimism is the faith that leads to
+                                    achievement. Nothing can be done without hope and confidence.<br> &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ― Helen
+                                    Keller</p>
+                                <!-- Slider btn -->
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="hero__img d-none d-lg-block f-right" data-animation="fadeInRight"
+                                data-delay="1s">
+                                <img src="{{url_for('static',filename='img/hero/flo11.jpg')}}"
+                                    style="width: 8cm; height: 13.10cm; padding-bottom: 30px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slider slider-height slider-padding d-flex align-items-center">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <div class="hero__caption">
+                                <span data-animation="fadeInUp" data-delay=".4s"></span>
+                                <h1 data-animation="fadeInUp" data-delay=".6s">Hello <br> {{user.name}}</h1>
+                                <p data-animation="fadeInUp" data-delay=".8s">Optimism is the faith that leads to
+                                    achievement. Nothing can be done without hope and confidence.<br> &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ― Helen
+                                    Keller</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="hero__img d-none d-lg-block f-right" data-animation="fadeInRight"
+                                data-delay="1s">
+                                <img src="{{url_for('static',filename='img/hero/famoasisapp1.png')}}"
+                                    style="width: 400px; height: 716px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="best-pricing pricing-padding col-sm-12"
+        data-background="{{url_for('static',filename='img/gallery/best_pricingbg.jpg')}}">
+        <div class="container">
+            <!-- Section Tittle -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <div class="section-tittle section-tittle2 text-center">
+                        <h2>Here are some recommended videos to listen</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Best Pricing End -->
+    <!-- Pricing Card Start -->
+    <div class="pricing-card-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-card text-center mb-30">
+                        <div class="card-top">
+                            <span>Motivation</span>
+                            <h4>Fight Depression</span></h4>
+                        </div>
+                        <div class="card-bottom">
+                            <a href="https://www.youtube.com/watch?v=Rv9SwZWVkOs" class="btn card-btn1">Watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-card  text-center mb-30">
+                        <div class="card-top">
+                            <span>Calming music</span>
+                            <h4>Stress<br> Relief</span></h4>
+                        </div>
+                        <div class="card-bottom">
+                            <a href="https://www.youtube.com/watch?v=sztFHij0_W0" class="btn card-btn1">Watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-card text-center mb-30">
+                        <div class="card-top">
+                            <span>Peace and relaxing</span>
+                            <h4>Nature Sounds</h4>
+                        </div>
+                        <div class="card-bottom">
+                            <a href="https://www.youtube.com/watch?v=od23CVaq2SQ" class="btn card-btn1">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="margin-top:40px;" />
+    <div class="container" style="margin-top:100px; margin-bottom: 100px; overflow-x:auto;">
+        <div class="col-sm-12">
+            <h3 style="margin-bottom: 30px;">View you responses:</h3>
+
+            <div class="progress-table-wrap ">
+                <div class="progress-table">
+                    <div class="table-head">
+                        <div class="serial">#</div>
+                        <div class="country">Date-Time</div>
+                        <div class="country">Three Good Things</div>
+                        <div class="visit">Sleep Hours</div>
+                        <div class="country">How do you feel</div>
+                    </div>
+                    <div class="table-row">
+                        {% for item in ans %}
+
+                        <div class="serial">01</div>
+                        <div class="country">{{item.date}}</div>
+                        <div class="country"> {{item.threeGoodThings}} </div>
+                        <div class="visit"> {{item.sleepHours}} </div>
+                        <div class="country"> {{item.howFeel}}</div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div id="piechart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="service-area sky-blue section-padding2">
+        <div class="container">
+            <!-- Section Tittle -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="section-tittle text-center">
+                        <h2>Contact a doctor <br> using famOasis</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Section caption -->
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="services-caption text-center mb-30">
+                        <div class="service-icon">
+                            <span class="flaticon-businessman"></span>
+                        </div>
+                        <div class="service-cap">
+                            <h4><a href="#">Dr. Alpha</a></h4>
+                            <p>MBBS, M.D. - Psychiatry <br> 10 years overall experience <br> Richmond Town, Banglore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="services-caption active text-center mb-30">
+                        <div class="service-icon">
+                            <span class="flaticon-businessman"></span>
+                        </div>
+                        <div class="service-cap">
+                            <h4><a href="#">Dr. Beta</a></h4>
+                            <p>MBBS, M.D. - Psychiatry <br> 8 years as specialist <br> Pimpri-Chinchwad, Pune </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="services-caption text-center mb-30">
+                        <div class="service-icon">
+                            <span class="flaticon-businessman"></span>
+                        </div>
+                        <div class="service-cap">
+                            <h4><a href="#">Dr. Gamma</a></h4>
+                            <p> MBBS - Psychiatry <br> 17 years as specialist <br> Santacruz, Mumbai </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="say-something-aera pt-90 pb-90 fix">
+        <div class="container" id="contact">
+            <div class="row justify-content-between align-items-center">
+                <div class="offset-xl-1 offset-lg-1 col-xl-5 col-lg-5">
+                    <div class="say-something-cap">
+                        <h2>Let's talk and collaborate! </h2>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3">
+                    <div class="say-btn">
+                        <a href="https://www.linkedin.com/in/ajaykumar1018/" class="btn radius-btn card-btn1">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- shape -->
+        <div class="say-shape">
+            <img src="{{url_for('static',filename='img/shape/say-shape-left.png')}}" alt=""
+                class="say-shape1 rotateme d-none d-xl-block">
+            <img src="{{url_for('static',filename='img/shape/say-shape-right.png')}}" alt=""
+                class="say-shape2 d-none d-lg-block">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+
+                ['Term', 'Value'],
+                ['Positive', 6],
+                ['Negative', 1],
+                ['Depression', 2],
+                ['Anxiety', 0],
+            ]);
+            var options = { 'title': 'Analysis', 'width': 500, 'height': 400 };
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="{{url_for('static',filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
+
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{{url_for('static',filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{{url_for('static',filename='js/jquery.slicknav.min.js')}}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/slick.min.js')}}"></script>
+    <!-- Date Picker -->
+    <script src="{{url_for('static',filename='js/gijgo.min.js')}}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{{url_for('static',filename='js/wow.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/animated.headline.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.magnific-popup.js')}}"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="{{url_for('static',filename='js/jquery.scrollUp.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.sticky.js')}}"></script>
+
+    <!-- contact js -->
+    <script src="{{url_for('static',filename='js/contact.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.form.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.validate.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/mail-script.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.ajaxchimp.min.js')}}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{{url_for('static',filename='js/plugins.js')}}"></script>
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+</body>
+
+</html>
