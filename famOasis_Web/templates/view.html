@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<title>View Answers</title>
+<body>
+    {% for item in values %}
+        <p>
+           Three Good Things: {{item.threeGoodThings}}, Sleep Hours: {{item.sleepHours}}, How do you feel: {{item.howFeel}}
+        </p>
+    {% endfor %}
+</body>
+</html>
